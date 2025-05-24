@@ -66,6 +66,7 @@ function passRender() {
     newEl.textContent = passGen(passLength)
     newEl.addEventListener("click", () => { 
       navigator.clipboard.writeText(newEl.textContent);
+      newEl.className = "copied"
       cboard.className = ""
       void cboard.offsetWidth;
       cboard.className = "cboard-notice"
