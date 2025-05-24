@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  color: #111827;
+  font-weight: 500;
+}
+
+body {
+  margin: 0; 
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+html {
+  background: linear-gradient(-90deg, #F9FAFB, white);
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 700px;
+  padding: 2rem 4rem;
+  padding-bottom: 4rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0rem;
+  label {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top input {
+    border: none;
+    font-size: 16px;
+    width: 80px;
+    color: gray;
+    border-radius: 0rem 1rem 1rem 0rem;
+    background: #E5E7EB;
+    padding: 8px;
+    transition: 2s;
+  }
+  .top input:hover {
+    background: #9CA3AF;
+    color: #4B5563;
+  }
+}
+
+.generate {
+  margin: 2rem 0rem;
+  display: flex;
+  gap: 1rem;
+  button {
+    padding: 0.8rem 1rem;
+    border: none;
+    font-size: 1rem;
+    background: magenta;
+    color: white;
+    border-radius: 0rem 2rem 2rem 0rem;
+    transition: 0.5s;
+    border: 2px solid magenta;
+  }
+  button:hover {
+    background: #1F2937;
+    cursor: pointer;
+  }
+  p {
+    color: gray;
+  }
+}
+
+.pass-controls {
+  border-bottom: 4px solid #374151; 
+}
+
+header {
+  margin-bottom: 4rem;
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  span {
+    color: magenta;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1.2rem;
+    color: gray;
+  }
+}
+
+input[type="checkbox"] {
+  accent-color: magenta; 
+}
+
+.pass-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-top: 1rem;
+  p {
+    animation: fadeIn 0.5s ease-out;
+    padding: 1rem;
+    background: #D1D5DB;
+    margin: 0;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 0.3s;
+  }
+  p:hover {
+    cursor: pointer;
+    background: #1F2937; 
+    color: magenta;
+  }
+  p:active {
+    background: magenta;
+    transition: 0s;
+    color: white;
+  }
+}
+
+.shape {
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 70% 50%, 50% 30%); 
+  background: #F3F4F6;
+  opacity: 50%;
+  height: 100%; width: 56%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.copied {
+  background: #F3F4F6 !important;
+  color: #9CA3AF;
+}
+
+.cboard-notice {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  animation: fadeOut 2s ease-out;
+  opacity: 0;
+  background: #F3F4F6; 
+}
+
+.cboard-default {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0.5; 
+  }
+  to { 
+    opacity: 1; 
+  }
+}
+
+@keyframes fadeOut {
+  from { 
+    opacity: 1; 
+  }
+  to { 
+    opacity: 0; 
+  }
+}
+
