@@ -1,4 +1,4 @@
-# JS Pass Generator
+# JS Pass Gen
 
 A JavaScript password generator. 
 
