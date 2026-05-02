@@ -1,6 +1,6 @@
 # JS Pass Gen
 
-A JavaScript password generator. 
+A JavaScript password generator originally created in 2025.
 
 ## Feature List
 - Set custom password length
