@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+    <header>
+      <h1>Generate a <br/><span>random password</span></h1>
+      <p>Never use an insecure password again.</p>
+    </header>
+
+    <main>
+        <div class="generate">
+          <!-- Generate Password-->
+          <button type="" onclick="passRender()">Generate passwords</button>
+          <p>Press "r" for quick generation!</p>
+        </div>
+      <section class="pass-controls">
+        <div class="settings">
+          <!-- Password Length-->
+          <div class="top">
+            <label for="length">Length 
+              <input type="number" name="length" min="1" value="15" onchange="updateLength()">
+            </label>
+          </div>
+          <div class="top">
+            <!-- Password Quantity -->
+            <label for="length">Quantity
+              <input type="number" name="length" min="1" value="2" onchange="updateQuant()">
+            </label>
+          </div>
+          <!-- Enable Numbers -->
+          <label for="">Numbers
+            <input type="checkbox" checked onclick="flipNum()">
+          </label>
+          <!-- Enable Symbols -->
+          <label for="">Symbols
+            <input type="checkbox" checked onclick="flipSymb()">
+          </label>
+        </div>
+      </section>
+      <section class="pass-container">
+        <!-- Passwords go here -->
+      </section>
+    </main>
+    </div>
+    <div class="shape"></div>
+  </body>
+  <footer class="cboard-default">
+    <p>Copied to clipboard!</p>
+  </footer>
+</html>
+<script src="./script.js"></script>
